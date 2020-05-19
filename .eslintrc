@@ -1,0 +1,12 @@
+{
+    "extends": "react-app",
+    "rules": {
+        "indent": [2, 2],
+        "jsx-quotes": ["error", "prefer-double"],
+        "quotes": ["error", "single"],
+        "max-len": [1, 95, 2, {
+            "ignorePattern": "^import\\s.+\\sfrom\\s.+;$",
+            "ignoreUrls": true
+        }]
+    }
+}

@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: Montserrat-Medium
+font link: https://fonts.google.com/specimen/Montserrat
+font author: Julieta Ulanovsky
+font author site: http://www.zkysky.com.ar/
+
+
+icon designer: Lemon Liu
+icon designer link: /lemonliu
+        
+{"bg-gradient-0":"#8E36DE","bg-gradient-1":"#F7CFF5","icon":"#ffffff","font":"#ffffff","slogan":"#ffffff"}
+      

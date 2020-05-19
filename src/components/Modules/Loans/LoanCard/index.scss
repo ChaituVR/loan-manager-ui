@@ -1,0 +1,16 @@
+.loan-card {
+  .ant-badge-status-dot {
+    width: 10px;
+    height: 10px;
+    top: 0;
+    margin-left: 5px;
+  }
+  .ant-progress {
+    margin-top: 10px;
+    left: -10px;
+    width: calc(100% + 15px);
+  }
+  .ant-card-body {
+    padding-bottom: 3px;
+  }
+}

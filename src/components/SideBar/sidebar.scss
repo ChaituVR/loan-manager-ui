@@ -1,0 +1,59 @@
+.App {
+  .ant-layout {
+    background: white;
+  }
+  .ant-page-header-heading-title > a {
+    @media (max-width: $breakpoint-xs) {
+      display:none;
+    }
+  }
+  // Fixes Header
+  .ant-page-header-heading-extra {
+    @media (max-width: $breakpoint-mobile) {
+      width: auto;
+      float: right;
+      padding: 0;
+    }
+  }
+  .sidebar-container {
+    text-align: left;
+    max-height: calc(100vh - #{$header-height});
+    overflow: auto; 
+    z-index: 1;
+    .ant-menu {
+      height: 100%;
+    }
+    // Usefull in future if we get more items in Sidebar
+    // &> ul{
+    //  height: calc(100vh - #{$header-height});
+    // }
+    // &::-webkit-scrollbar {
+    //   background-color: $background;
+    //   width: 8px;
+    //   border-right: 1px solid #e8e8e8;
+    // }
+    // &::-webkit-scrollbar-thumb {
+    //   background-color:#e6f7ff;
+    //   -webkit-border-radius: 8px;
+    //   border-radius: 8px;
+    //   border: 2px solid #e6f7ff;
+    // }
+    // Hide collapsed SideBar in mobile
+    &.ant-layout-sider-collapsed {
+      
+      @media (max-width: $breakpoint-mobile) {
+        display:none;
+      }
+    }
+    .ant-menu-item-selected {
+      border-right: 4px solid;
+    }
+  }  
+  .content-container {
+    margin: 0;
+    padding: 15px;
+    height: calc(100vh - #{$header-height});
+    overflow: auto;
+    text-align: left;
+  }
+}
