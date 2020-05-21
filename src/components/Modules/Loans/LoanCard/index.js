@@ -68,9 +68,12 @@ class LoanCard extends React.Component {
               title={this.props.loanDetails.name}
               description={
                 <div>
-                  Balance: ₹{(this.props.loanDetails.loanAmount - this.props.loanDetails.paidAmount).toLocaleString()}
+                  Loan Balance: ₹{(this.props.loanDetails.loanAmount - this.props.loanDetails.paidAmount).toLocaleString()}
                   <br/>
-                  Status: <Badge status={this.props.loanDetails.status === 'In Progress' ? 'processing': 'success'} text={this.props.loanDetails.status} />
+                  Status: <Badge 
+                    status={this.props.loanDetails.status === 'In Progress' ? 'processing': 'success'} 
+                    text={this.props.loanDetails.status} 
+                  />
                 </div>
               }
             />

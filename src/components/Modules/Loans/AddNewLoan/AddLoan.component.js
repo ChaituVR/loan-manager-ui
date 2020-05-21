@@ -2,7 +2,7 @@ import React from 'react';
 import { Modal, Button, Icon } from 'antd';
 import CreateCustomerForm from './AddLoan.form';
 
-export default class CrateCustomer extends React.Component {
+export default class AddLoan extends React.Component {
   state = {
     ModalText: 'Content of the modal',
     visible: false,
@@ -60,7 +60,7 @@ export default class CrateCustomer extends React.Component {
           Add new Loan
         </Button>
         <Modal
-          title="Create Customer"
+          title="Add a new Loan"
           visible={visible}
           onOk={this.handleCreate}
           confirmLoading={confirmLoading}

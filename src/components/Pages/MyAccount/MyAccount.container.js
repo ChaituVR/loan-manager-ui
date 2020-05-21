@@ -3,7 +3,8 @@ import MyAccountComponent from './MyAccount.component';
 
 const mapStateToProps = (state, props) => {
   return {
-    user: state.auth.user ? state.auth.user : {}
+    user: state.auth.user ? state.auth.user : {},
+    ...props
   };
 };
 

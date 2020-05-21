@@ -2,7 +2,7 @@ import React from 'react';
 import AddLoan from '../../Modules/Loans/AddNewLoan/AddLoan.component';
 import LoanTable from '../../Modules/Loans/LoanTable/LoanTable.component';
 
-class Customers extends React.Component {
+class Loans extends React.Component {
   componentDidMount() {
     // this.setState({
     //   someKey: 'otherValue'
@@ -17,4 +17,4 @@ class Customers extends React.Component {
   }
 }
 
-export default Customers;
+export default Loans;
