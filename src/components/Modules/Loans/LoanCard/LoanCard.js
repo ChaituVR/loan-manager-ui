@@ -1,7 +1,7 @@
 import React from 'react';
 import { Skeleton, Switch, Card, Badge, Progress, message, Modal } from 'antd';
 import { EditOutlined, SettingOutlined, BellOutlined, DeleteOutlined, EyeOutlined, StopOutlined, ExclamationCircleOutlined } from '@ant-design/icons';
-import './index.scss';
+import './LoanCard.scss';
 
 const { Meta } = Card;
 

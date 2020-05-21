@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import LoanCard from '../LoanCard'
+import LoanCard from '../LoanCard/LoanCard'
 
 export default class LoanTable extends Component {
   render() {

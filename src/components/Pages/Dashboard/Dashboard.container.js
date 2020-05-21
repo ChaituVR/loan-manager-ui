@@ -10,7 +10,7 @@ const mapStateToProps = (state, props) => {
   };
 };
 
-const mapDispatchToProps = (dispatch, ownProps) => {
+const mapDispatchToProps = (dispatch) => {
   return {
     fetchDashboard: () => dispatch(fetchDashboard),
   };
