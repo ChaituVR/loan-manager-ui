@@ -47,11 +47,11 @@ class DynamicFieldSet extends React.Component {
     const formItemLayout = {
       labelCol: {
         xs: { span: 24 },
-        sm: { span: 4 },
+        sm: { span: 6 },
       },
       wrapperCol: {
         xs: { span: 24 },
-        sm: { span: 20 },
+        sm: { span: 18, offset: 2 },
       },
     };
     const formItemLayoutWithOutLabel = {
@@ -90,7 +90,7 @@ class DynamicFieldSet extends React.Component {
     ));
     return (
       <Form onSubmit={this.handleSubmit}>
-        <Form.Item label="E-mail" {...formItemLayout}>
+        <Form.Item label="Loan Name" {...formItemLayout}>
           {getFieldDecorator('email', {
             rules: [
               {
@@ -102,7 +102,7 @@ class DynamicFieldSet extends React.Component {
                 message: 'Please input your E-mail!',
               },
             ],
-          })(<Input placeholder="Please input your email" />)}
+          })(<Input placeholder="Give your loan a name to easily identify" />)}
         </Form.Item>
         <Form.Item {...formItemLayout} label="Name">
           {
@@ -131,5 +131,5 @@ class DynamicFieldSet extends React.Component {
   }
 }
 
-const CreateCustomerForm = Form.create({ name: 'dynamic_form_item' })(DynamicFieldSet);
-export default CreateCustomerForm;
+const AddLoanForm = Form.create({ name: 'dynamic_form_item' })(DynamicFieldSet);
+export default AddLoanForm;
