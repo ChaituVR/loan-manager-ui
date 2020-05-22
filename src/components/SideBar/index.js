@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { DollarCircleOutlined } from '@ant-design/icons';
-import { Menu, Icon, Layout } from 'antd';
+import { DollarCircleOutlined, DashboardOutlined, AppstoreOutlined } from '@ant-design/icons';
+import { Menu, Layout } from 'antd';
 import { Link } from 'react-router-dom';
 import { routes } from '../../config';
 const { Sider, Content } = Layout;
@@ -20,7 +20,7 @@ export default class SideBar extends Component {
           <Menu theme="light" mode="inline" defaultSelectedKeys={['1']}>
             <Menu.Item key="dashboard">
               <Link to={routes.dashboard}>
-                <Icon type="dashboard"/>
+                <DashboardOutlined />
                 <span>Dashboard</span>
               </Link>
             </Menu.Item>
@@ -32,7 +32,7 @@ export default class SideBar extends Component {
             </Menu.Item>
             <Menu.Divider/>
             <Menu.Item key="appstore">
-              <Icon type="appstore"/>
+              <AppstoreOutlined />
               <span>Others</span>
             </Menu.Item>
           </Menu>

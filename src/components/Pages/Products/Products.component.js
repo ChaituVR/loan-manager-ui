@@ -1,6 +1,7 @@
 import React from 'react';
 import './Products.css';
-import { Button, Icon } from 'antd';
+import { Button } from 'antd';
+import { LoadingOutlined } from '@ant-design/icons';
 
 class Products extends React.Component {
   constructor(props){
@@ -74,7 +75,7 @@ class Products extends React.Component {
             Price
           </Button>
           <div className="products-wrapper">
-            { loading && <Icon style={{ fontSize: 20, margin: '0 auto' }} type="loading" /> }
+            { loading && <LoadingOutlined style={{ fontSize: 20, margin: '0 auto' }} type="loading" /> }
             { !loading && products.length === 0 && <div>No Products Available</div> }
             {
               products.map((product, index)=> (

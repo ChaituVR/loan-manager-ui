@@ -1,8 +1,9 @@
 import React from 'react';
-import { PageHeader, Button, Dropdown, Icon, Menu, Avatar } from 'antd';
+import { PageHeader, Button, Dropdown, Menu, Avatar } from 'antd';
 import { Link } from 'react-router-dom';
 import { routes } from '../../config';
 import { Logo } from '../Common/Image';
+import { SettingOutlined, UserOutlined, QuestionCircleOutlined, LogoutOutlined, MenuOutlined, CaretDownOutlined } from '@ant-design/icons';
 
 const Header = (props) => {
   const signedInName = props.user.displayName ? 
@@ -16,25 +17,25 @@ const Header = (props) => {
       <Menu.Divider />
       <Menu.Item key="1">
         <Link to={routes.myAccount}>
-          <Icon type="user" />
+          <UserOutlined />
           <span style={{ marginLeft: 10 }}>My Account</span>
         </Link>
       </Menu.Item>
       <Menu.Item key="2">
         <Link to={routes.settings}>
-          <Icon type="setting" />
+          <SettingOutlined />
           <span style={{ marginLeft: 10 }}>Settings</span>      
         </Link>
       </Menu.Item>
       <Menu.Item key="3">
         <Link to={routes.help}>
-          <Icon type="question-circle" />
+          <QuestionCircleOutlined />
           <span style={{ marginLeft: 10 }}>Help</span>
         </Link>
       </Menu.Item>
       <Menu.Divider />
       <Menu.Item key="4" onClick={props.handleLogout}>
-        <Icon type="logout" />
+        <LogoutOutlined />
         <span style={{ marginLeft: 10 }}>Logout</span>
       </Menu.Item>
     </Menu>
@@ -54,7 +55,7 @@ const Header = (props) => {
             onClick={props.toggleCollapsed}
             style={{ color: 'black' }}
           >
-            <Icon type="menu" />
+            <MenuOutlined />
           </Button>
           <Link to="/dashboard">
             <Logo type="logo-main-white-background" style={{ width: '100%', maxWidth: 150}}/>
@@ -79,7 +80,7 @@ const Header = (props) => {
               size="medium"
               icon="user"
             />
-            <Icon size="medium" type="caret-down" style={{ marginTop: 8 }} />
+            <CaretDownOutlined size="medium" style={{ marginTop: 8 }} />
           </Button>
         </Dropdown>,
       ]}

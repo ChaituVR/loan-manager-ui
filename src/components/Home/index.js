@@ -1,6 +1,7 @@
 import React from 'react';
-import { Drawer, Button, Icon } from 'antd';
+import { Drawer, Button } from 'antd';
 import NormalLoginForm from '../Auth/Login/Login.component';
+import { PlusOutlined } from '@ant-design/icons';
 
 class Home extends React.Component {
   constructor(props){
@@ -24,7 +25,7 @@ class Home extends React.Component {
     return (
       <div>
         <Button type="primary" onClick={this.showDrawer}>
-          <Icon type="plus" /> Login 
+          <PlusOutlined /> Login 
         </Button>
         <Drawer
           title="Login to Dashboard"

@@ -1,5 +1,6 @@
 import React from 'react';
-import { Form, Input, Icon, Button } from 'antd';
+import { Form, Input, Button } from 'antd';
+import { DeleteOutlined, PlusOutlined } from '@ant-design/icons';
 
 let id = 0;
 
@@ -80,9 +81,8 @@ class DynamicFieldSet extends React.Component {
           ],
         })(<Input placeholder="passenger name" style={{ width: '60%', marginRight: 8 }} />)}
         {keys.length > 1 ? (
-          <Icon
+          <DeleteOutlined
             className="dynamic-delete-button"
-            type="minus-circle-o"
             onClick={() => this.remove(k)}
           />
         ) : null}
@@ -118,7 +118,7 @@ class DynamicFieldSet extends React.Component {
         {formItems}
         <Form.Item {...formItemLayoutWithOutLabel}>
           <Button type="dashed" onClick={this.add} style={{ width: '60%' }}>
-            <Icon type="plus" /> Add field
+            <PlusOutlined /> Add field
           </Button>
         </Form.Item>
         {/* <Form.Item {...formItemLayoutWithOutLabel}>
