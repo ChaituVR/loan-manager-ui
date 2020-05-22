@@ -1,6 +1,7 @@
 import React from 'react';
 import './Dashboard.css';
-import { Button, Icon } from 'antd';
+import { Button } from 'antd';
+import { LoadingOutlined } from '@ant-design/icons';
 
 class Dashboard extends React.Component {
   constructor(props){
@@ -75,7 +76,7 @@ class Dashboard extends React.Component {
           </Button>
           Dashboard
           <div className="products-wrapper">
-            { loading && <Icon style={{ fontSize: 20, margin: '0 auto' }} type="loading" /> }
+            { loading && <LoadingOutlined style={{ fontSize: 20, margin: '0 auto' }} type="loading" /> }
             { !loading && products.length === 0 && <div>No Dashboard Available</div> }
             {
               products.map((product, index)=> (

@@ -1,6 +1,7 @@
 import React from 'react';
-import { Modal, Button, Icon } from 'antd';
+import { Modal, Button } from 'antd';
 import CreateCustomerForm from './AddLoan.form';
+import { AppstoreAddOutlined } from '@ant-design/icons';
 
 export default class AddLoan extends React.Component {
   state = {
@@ -56,7 +57,7 @@ export default class AddLoan extends React.Component {
     return (
       <div>
         <Button type="primary" onClick={this.showModal}>
-          <Icon type="use" />
+          <AppstoreAddOutlined />
           Add new Loan
         </Button>
         <Modal
