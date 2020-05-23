@@ -9,8 +9,7 @@ jobs:
       - checkout
       - node/install-packages
       - run:
-          command: npm run build
-          command: npm test
+          command: npm run build && npm test
 workflows:
     build-and-test:
       jobs:
