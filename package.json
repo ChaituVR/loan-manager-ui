@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@ant-design/icons": "4.1.0",
+    "apollo-server-express": "^2.13.1",
     "antd": "4.2.4",
     "axios": "0.19.2",
     "enzyme": "3.11.0",
