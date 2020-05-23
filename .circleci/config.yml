@@ -7,7 +7,7 @@ jobs:
       name: node/default
     steps:
       - checkout
-      - node/install-packages:
+      - node/install-packages
       - run:
           command: npm run build
           command: npm test
