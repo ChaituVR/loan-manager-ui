@@ -1,21 +1,21 @@
-import {LoadingOutlined} from '@ant-design/icons';
-import {useQuery} from '@apollo/react-hooks';
-import {gql} from 'apollo-boost';
-import React from 'react'
+import { LoadingOutlined } from "@ant-design/icons";
+import { useQuery } from "@apollo/react-hooks";
+import { gql } from "apollo-boost";
+import React from "react";
 
-import LoanCard from '../LoanCard/LoanCard'
+import LoanCard from "../LoanCard/LoanCard";
 
 const GET_LOANS = gql`
-{
-  getLoans {
-    name
-    loanAmount
-    paidAmount
-    emi
-    status
-    coverImage
+  {
+    getLoans {
+      name
+      loanAmount
+      paidAmount
+      emi
+      status
+      coverImage
+    }
   }
-}
 `;
 
 const LoanTable = () => {
@@ -25,10 +25,10 @@ const LoanTable = () => {
 
   return data.getLoans.map((loanDetails) => (
     <div>
-      <LoanCard loanDetails={loanDetails} loading={false}/>
+      <LoanCard loanDetails={loanDetails} loading={false} />
     </div>
   ));
-}
+};
 
 export default LoanTable;
 // export default class LoanTable extends Component {
