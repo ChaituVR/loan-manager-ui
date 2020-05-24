@@ -1,5 +1,8 @@
 # Loan Manager UI
 
+![CircleCI](https://img.shields.io/circleci/build/github/ChaituVR/loan-manager-ui?label=CircleCI%20&logo=CircleCI&token=97029ed6b00dd4462452de624cb2eb8d49a29dad)
+ [![Total alerts](https://img.shields.io/lgtm/alerts/g/ChaituVR/loan-manager-ui.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/ChaituVR/loan-manager-ui/alerts/) 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -20,6 +23,15 @@ You will also see any lint errors in the console.
 We are using Firebase to authenticate users, so need to set config/firebaseConfig.json file with values taken from setting pages as shown below
 
 ![Imgur](https://i.imgur.com/FyMSlhm.jpg)
+
+
+## Server: 
+
+All the API Code will be served in serverless functions - for now hosted on vercel - Refer https://vercel.com/docs/v2/serverless-functions/introduction for more details
+
+Everything will be deployed by vercel automatically on a git push or a with a new Pull Request
+
+### Local Development: 
 
 
 

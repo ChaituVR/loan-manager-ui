@@ -25,7 +25,7 @@ export const checkLogin = (loggedInCallBack, errorCallback) => {
         phoneNumber,
         providerData,
         providerEmail: providerData[0].email
-      }
+      };
       // https://blog.hasura.io/authentication-and-authorization-using-hasura-and-firebase/
       const accessToken = await user.getIdToken();
       const idTokenResult = await user.getIdTokenResult();
