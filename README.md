@@ -22,6 +22,15 @@ We are using Firebase to authenticate users, so need to set config/firebaseConfi
 ![Imgur](https://i.imgur.com/FyMSlhm.jpg)
 
 
+## Server: 
+
+All the API Code will be served in serverless functions - for now hosted on vercel - Refer https://vercel.com/docs/v2/serverless-functions/introduction for more details
+
+Everything will be deployed by vercel automatically on a git push or a with a new Pull Request
+
+### Local Development: 
+
+
 
 ### `yarn test`
 
