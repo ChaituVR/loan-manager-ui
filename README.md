@@ -1,7 +1,7 @@
 # Loan Manager UI
 
 ![CircleCI](https://img.shields.io/circleci/build/github/ChaituVR/loan-manager-ui?label=CircleCI%20&logo=CircleCI&token=97029ed6b00dd4462452de624cb2eb8d49a29dad)
- [![Total alerts](https://img.shields.io/lgtm/alerts/g/ChaituVR/loan-manager-ui.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/ChaituVR/loan-manager-ui/alerts/) 
+ [![Total alerts](https://img.shields.io/lgtm/alerts/g/ChaituVR/loan-manager-ui.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/ChaituVR/loan-manager-ui/alerts/) [![CodeFactor](https://www.codefactor.io/repository/github/chaituvr/loan-manager-ui/badge)](https://www.codefactor.io/repository/github/chaituvr/loan-manager-ui)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
