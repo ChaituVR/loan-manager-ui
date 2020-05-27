@@ -4863,7 +4863,7 @@ dotenv-expand@5.1.0:
   resolved "https://registry.yarnpkg.com/dotenv-expand/-/dotenv-expand-5.1.0.tgz#3fbaf020bfd794884072ea26b1e9791d45a629f0"
   integrity sha512-YXQl1DSa4/PQyRfgrv6aoNjhasp/p4qs9FjJ4q4cQk+8m4r6k4ZSiEyytKG8f8W9gi8WsQtIObNmKd+tMzNTmA==
 
-dotenv@8.2.0, dotenv@^8.2.0:
+dotenv@8.2.0:
   version "8.2.0"
   resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-8.2.0.tgz#97e619259ada750eea3e4ea3e26bceea5424b16a"
   integrity sha512-8sJ78ElpbDJBHNeBzUbUVLsqKdccaa/BXF1uPTw3GrvQTBgrQrtObr2mUrE38vzYd8cEv+m/JBfDLioYcfXoaw==
@@ -8467,7 +8467,7 @@ moment@^2.24.0, moment@^2.25.3:
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.26.0.tgz#5e1f82c6bafca6e83e808b30c8705eed0dcbd39a"
   integrity sha512-oIixUO+OamkUkwjhAVE18rAMfRJNsNe/Stid/gwHSOfHrOtw9EhAY2AHvdKZ/k/MggcYELFCJz/Sn2pL8b8JMw==
 
-mongodb@^3.5.7:
+mongodb@3.5.7:
   version "3.5.7"
   resolved "https://registry.yarnpkg.com/mongodb/-/mongodb-3.5.7.tgz#6dcfff3bdbf67a53263dcca1647c265eea1d065d"
   integrity sha512-lMtleRT+vIgY/JhhTn1nyGwnSMmJkJELp+4ZbrjctrnBxuLbj6rmLuJFz8W2xUzUqWmqoyVxJLYuC58ZKpcTYQ==
