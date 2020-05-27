@@ -3,6 +3,17 @@ import firebase from '../../config/firebaseConfig';
 import Axios from 'axios';
 import { routes } from '../../config';
 
+export const getUserCountry = async () => {
+  try {
+    const response = await Axios('http://ip-api.com/json', {
+      timeout: 1000, // default to 1 sec
+    });
+    return response.data;
+  } catch (err) {
+    return 'US';
+  }
+};
+
 export const checkLogin = (loggedInCallBack, errorCallback) => {
   firebase.auth().onAuthStateChanged(async (user) => {
     if (user){
@@ -98,14 +109,15 @@ export const showLogin = async (uiShownCallback) => {
   ui.start('#firebaseui-auth-container', firebaseuiConfig);
 };
 
-export const sendEmailVerification = (success,error) => {
+export const sendEmailVerification = (success, _error) => {
   firebase.auth().currentUser.sendEmailVerification().then(function() {
     // Email sent.
     success();
+    return true;
   }).catch(function(error) {
     // An error happened.
-    console.log(error);
-    error();
+    console.error(error);
+    _error();
   });
 }
 
@@ -113,20 +125,10 @@ export const sendPasswordResetEmail = (email, success, errorCallback) => {
   firebase.auth().sendPasswordResetEmail(email).then(function() {
     // Email sent.
     success();
+    return true;
   }).catch(function(error) {
     // An error happened.
     console.log(error);
     errorCallback();
   });
 }
-
-export const getUserCountry = async () => {
-  try {
-    const response = await Axios('http://ip-api.com/json', {
-      timeout: 1000, // default to 1 sec
-    });
-    return response.data;
-  } catch (err) {
-    return 'US';
-  }
-};

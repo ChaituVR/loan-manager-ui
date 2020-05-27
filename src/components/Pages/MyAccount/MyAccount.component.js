@@ -10,7 +10,7 @@ class MyAccountComponent extends React.Component {
       message.success('There is an Error! Please Try again after sometime');
     });
   }
-  sendPasswordResetEmail = (e) => {
+  sendPasswordResetEmail = () => {
     sendPasswordResetEmail(this.props.user.email, () => {
       message.success('Email Sent!');
     }, () => {
@@ -59,7 +59,7 @@ class MyAccountComponent extends React.Component {
       </div>
     );
   }
-};
+}
 
 
 export default MyAccountComponent;

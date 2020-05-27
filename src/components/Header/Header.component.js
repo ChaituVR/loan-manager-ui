@@ -5,10 +5,7 @@ import { routes } from '../../config';
 import { Logo } from '../Common/Image';
 import { SettingOutlined, UserOutlined, QuestionCircleOutlined, LogoutOutlined, MenuOutlined, CaretDownOutlined } from '@ant-design/icons';
 
-const Header = (props) => {
-  const signedInName = props.user.displayName ? 
-    props.user.displayName : 
-    props.user.phoneNumber;
+const SignedInMenu = ({signedInName, handleLogout}) => {
   const menu = (
     <Menu>
       <Menu.Item key="0">
@@ -34,13 +31,23 @@ const Header = (props) => {
         </Link>
       </Menu.Item>
       <Menu.Divider />
-      <Menu.Item key="4" onClick={props.handleLogout}>
+      <Menu.Item key="4" onClick={handleLogout}>
         <LogoutOutlined />
         <span style={{ marginLeft: 10 }}>Logout</span>
       </Menu.Item>
     </Menu>
   );
+  return menu;
+}
 
+const Header = (props) => {
+  const signedInName = props.user.displayName ? 
+    props.user.displayName : 
+    props.user.phoneNumber;
+  const menu = <SignedInMenu 
+    signedInName={signedInName}
+    handleLogout={props.handleLogout}
+  />
   return (<div>
     <PageHeader
       style={{

@@ -8,6 +8,7 @@ import { LoadingOutlined } from '@ant-design/icons';
 const GET_LOANS = gql`
 {
   getLoans {
+    _id
     name
     loanAmount
     paidAmount
@@ -25,24 +26,9 @@ const LoanTable = () => {
 
   return data.getLoans.map((loanDetails) => (
     <div>
-      <LoanCard loanDetails={loanDetails} loading={false}/>
+      <LoanCard loanDetails={loanDetails} loading={false} key={loanDetails._id} />
     </div>
   ));
 }
 
 export default LoanTable;
-// export default class LoanTable extends Component {
-//   render() {
-//     const loanDetails = {
-//       name: 'HDFC Bank',
-//       loanAmount: 1002554,
-//       paidAmount: 150000,
-//       emi: 16101,
-//       notifications: true,
-//       status: 'In Progress',
-//       coverImage: 'https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png',
-//     }
-//     return (
-//     )
-//   }
-// }
