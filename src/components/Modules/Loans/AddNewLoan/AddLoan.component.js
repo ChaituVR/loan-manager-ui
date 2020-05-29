@@ -1,11 +1,11 @@
 import React from 'react';
 import { Modal, Button } from 'antd';
-import CreateCustomerForm from './AddLoan.form';
 import { AppstoreAddOutlined } from '@ant-design/icons';
+import CreateCustomerForm from './AddLoan.form';
+import './AddLoan.scss';
 
 export default class AddLoan extends React.Component {
   state = {
-    ModalText: 'Content of the modal',
     visible: false,
     confirmLoading: false,
   };
@@ -68,7 +68,6 @@ export default class AddLoan extends React.Component {
           onCancel={this.handleCancel}
         >
           <CreateCustomerForm wrappedComponentRef={this.saveFormRef}/>
-          <p>{ModalText}</p>
         </Modal>
       </div>
     );

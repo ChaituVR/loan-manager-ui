@@ -1,78 +1,48 @@
 import React from 'react';
+import { useForm } from 'react-hook-form';
+import { Input, InputNumber, Checkbox } from 'antd';
 
-import { Form, Input, Button, Checkbox } from 'antd';
-
-const layout = {
-  labelCol: {
-    span: 8,
-  },
-  wrapperCol: {
-    span: 16,
-  },
-};
-const tailLayout = {
-  wrapperCol: {
-    offset: 8,
-    span: 16,
-  },
-};
-
-const AddLoanForm = () => {
-  const onFinish = values => {
-    console.log('Success:', values);
-  };
-
-  const onFinishFailed = errorInfo => {
-    console.log('Failed:', errorInfo);
-  };
-
+export default function AddLoanForm() {
+  const { register, handleSubmit, errors } = useForm();
+  const onSubmit = data => console.log(data);
+  console.log(errors);
+  
   return (
-    <Form
-      {...layout}
-      name="basic"
-      initialValues={{
-        remember: true,
-      }}
-      onFinish={onFinish}
-      onFinishFailed={onFinishFailed}
-    >
-      <Form.Item
-        label="Username"
-        name="username"
-        rules={[
-          {
-            required: true,
-            message: 'Please input your username!',
-          },
-        ]}
-      >
-        <Input />
-      </Form.Item>
-
-      <Form.Item
-        label="Password"
-        name="password"
-        rules={[
-          {
-            required: true,
-            message: 'Please input your password!',
-          },
-        ]}
-      >
-        <Input.Password />
-      </Form.Item>
-
-      <Form.Item {...tailLayout} name="remember" valuePropName="checked">
-        <Checkbox>Remember me</Checkbox>
-      </Form.Item>
-
-      <Form.Item {...tailLayout}>
-        <Button type="primary" htmlType="submit">
-          Submit
-        </Button>
-      </Form.Item>
-    </Form>
+    <form onSubmit={handleSubmit(onSubmit)} className="add-loan-form">
+      <div className="input-container">
+        Name:
+        <Input 
+          type="text" 
+          placeholder="Ex: JPMorgan, Wells Fargo etc" 
+          name="loanName" 
+          ref={register({required: true})} 
+        />
+      </div>
+      <div className="input-container">
+        Amount you have to pay back: 
+        <InputNumber
+          placeholder="Ex: $1000"
+          name="totalAmount"
+          ref={register({required: true, max: 9999999999999, min: 0})}   
+        />
+      </div>
+      <div className="input-container">
+        <Checkbox
+          name="includedInterest" 
+          ref={register}
+        >
+          Above amount includes interest amount
+        </Checkbox>
+      </div>
+      <div className="input-container">
+        <Checkbox 
+          name="emi" 
+          ref={register}
+        >
+          This is a Monthly Payable Loan (EMI)
+        </Checkbox>
+      </div>
+      <input type="submit" />
+    </form>
   );
-};
-
-export default AddLoanForm;
+}

@@ -16,9 +16,16 @@ import rootReducer from './state/reducers';
 let initialStore = {
 };
 
-const store = createStore(rootReducer, initialStore, compose(
+const middlewares = [
   applyMiddleware(thunk),
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+]
+
+if(window.__REDUX_DEVTOOLS_EXTENSION__) {
+  middlewares.push(window.__REDUX_DEVTOOLS_EXTENSION__())
+}
+
+const store = createStore(rootReducer, initialStore, compose(
+  ...middlewares
 ));
 
 
