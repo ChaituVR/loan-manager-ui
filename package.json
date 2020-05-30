@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@ant-design/icons": "4.1.0",
+    "@ant-design/icons": "4.2.1",
     "@apollo/react-hooks": "3.1.5",
     "antd": "4.2.5",
     "apollo-boost": "0.4.9",
@@ -12,7 +12,7 @@
     "dotenv": "8.2.0",
     "enzyme": "3.11.0",
     "enzyme-adapter-react-16": "1.15.2",
-    "firebase": "7.14.5",
+    "firebase": "7.14.6",
     "firebaseui": "4.5.0",
     "graphql": "15.0.0",
     "mongodb": "3.5.8",
