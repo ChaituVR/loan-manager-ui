@@ -7,12 +7,15 @@ jobs:
       name: node/default
     steps:
       - checkout
-      - node/with-cache:
-          steps:
-            - run: npm install
-            - run: npm run build
-            - run: npm test -- --coverage
-            - run: bash <(curl -s https://codecov.io/bash)
+      - node/install-packages
+      - run: 
+          command: npm install
+      - run: 
+          command: npm run build
+      - run: 
+          command: npm test -- --coverage
+      - run: 
+          command: bash <(curl -s https://codecov.io/bash)
 workflows:
     build-and-test:
       jobs:
