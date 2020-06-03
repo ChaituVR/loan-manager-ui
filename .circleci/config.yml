@@ -8,13 +8,15 @@ jobs:
     steps:
       - checkout
       - node/install-packages
-      - run: 
-          command: npm install
-      - run: 
-          command: npm run build
-      - run: 
-          command: npm test -- --coverage
-      - run: 
+      - run:
+          command: npm install -g yarn
+      - run:
+          command: yarn install
+      - run:
+          command: yarn build
+      - run:
+          command: yarn test -- --coverage
+      - run:
           command: bash <(curl -s https://codecov.io/bash)
 workflows:
     build-and-test:
