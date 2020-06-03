@@ -2,7 +2,6 @@ jobs:
   build-and-test:
     executor:
       name: node/default
-      tag: '13'
     steps:
       - checkout
       - node/install-packages:
