@@ -1,7 +1,7 @@
 import React from 'react';
 import { Skeleton, Switch, Card, Badge, Progress, message, Modal } from 'antd';
 import { EditOutlined, SettingOutlined, BellOutlined, DeleteOutlined, EyeOutlined, StopOutlined, ExclamationCircleOutlined } from '@ant-design/icons';
-import './LoanCard.scss';
+import './LoanCard';
 
 const { Meta } = Card;
 
@@ -10,11 +10,11 @@ class LoanCard extends React.Component {
   showConfirm = () => {
     const { confirm } = Modal;
     confirm({
-      title: 'Are you sure you want to delete this Loan?',
+      title: 'Are you sure you want to delete this Loan???',
       icon: <ExclamationCircleOutlined />,
       content: 'Please make sure before deleting, the data for this loan will not be stored anywhere if you delete...',
       onOk() {
-        console.log('OK');
+        console.log('OK....');
       },
       onCancel() {
         console.log('Cancel');
