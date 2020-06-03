@@ -8,11 +8,11 @@ module.exports = {
       name: '@storybook/preset-scss',
       options: {
         cssLoaderOptions: {
-          modules: true
+          modules: true,
           data: '@import "antd/dist/antd.css";',
         },
         sassLoaderOptions: {
-          data: '@import "../index.scss";',
+          data: '@import "../src/index.scss";',
         }
       }
     }
