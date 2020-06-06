@@ -8,3 +8,8 @@ html, body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+
+// Components 
+@import 'components/Modules/Loans/AddNewLoan/AddLoan.scss';
+@import 'components/Modules/Loans/LoanCard/LoanCard.scss';

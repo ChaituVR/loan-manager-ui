@@ -2,7 +2,7 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import { Input, InputNumber, Checkbox } from 'antd';
 
-export default function AddLoanForm() {
+const AddLoanForm = () => {
   const { register, handleSubmit, errors } = useForm();
   const onSubmit = data => console.log(data);
   console.log(errors);
@@ -10,7 +10,7 @@ export default function AddLoanForm() {
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="add-loan-form">
       <div className="input-container">
-        Name:
+        Loan Name:
         <Input 
           type="text" 
           placeholder="Ex: JPMorgan, Wells Fargo etc" 
@@ -46,3 +46,5 @@ export default function AddLoanForm() {
     </form>
   );
 }
+
+export default AddLoanForm;

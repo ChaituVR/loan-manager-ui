@@ -2,7 +2,6 @@ import React from 'react';
 import { Modal, Button } from 'antd';
 import { AppstoreAddOutlined } from '@ant-design/icons';
 import CreateCustomerForm from './AddLoan.form';
-import './AddLoan.scss';
 
 export default class AddLoan extends React.Component {
   state = {
