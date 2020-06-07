@@ -1,5 +1,5 @@
 import React from 'react';
-import { action } from '@storybook/addon-actions';
+// import { action } from '@storybook/addon-actions';
 import AddLoan from './AddLoan.component';
 import AddLoanForm from './AddLoan.form';
 
