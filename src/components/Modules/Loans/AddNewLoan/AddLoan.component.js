@@ -1,11 +1,10 @@
 import React from 'react';
 import { Modal, Button } from 'antd';
-import CreateCustomerForm from './AddLoan.form';
 import { AppstoreAddOutlined } from '@ant-design/icons';
+import CreateCustomerForm from './AddLoan.form';
 
 export default class AddLoan extends React.Component {
   state = {
-    ModalText: 'Content of the modal',
     visible: false,
     confirmLoading: false,
   };
@@ -53,7 +52,7 @@ export default class AddLoan extends React.Component {
   };
 
   render() {
-    const { visible, confirmLoading, ModalText } = this.state;
+    const { visible, confirmLoading } = this.state;
     return (
       <div>
         <Button type="primary" onClick={this.showModal}>
@@ -68,7 +67,6 @@ export default class AddLoan extends React.Component {
           onCancel={this.handleCancel}
         >
           <CreateCustomerForm wrappedComponentRef={this.saveFormRef}/>
-          <p>{ModalText}</p>
         </Modal>
       </div>
     );
