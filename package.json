@@ -66,5 +66,10 @@
     "sass-loader": "^8.0.2",
     "style-loader": "^1.2.1"
   },
-  "proxy": "http://localhost:8080"
+  "proxy": "http://localhost:8080",
+  "jest": {
+    "coveragePathIgnorePatterns": [
+      ".stories.js"
+    ]
+  }
 }
