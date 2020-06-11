@@ -12,7 +12,7 @@
     "dotenv": "8.2.0",
     "enzyme": "3.11.0",
     "enzyme-adapter-react-16": "1.15.2",
-    "firebase": "7.15.0",
+    "firebase": "7.15.1",
     "firebaseui": "4.5.1",
     "graphql": "15.1.0",
     "mongodb": "3.5.8",
