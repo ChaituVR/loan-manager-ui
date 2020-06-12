@@ -15,7 +15,7 @@
     "firebase": "7.15.1",
     "firebaseui": "4.5.1",
     "graphql": "15.1.0",
-    "mongodb": "3.5.8",
+    "mongodb": "3.5.9",
     "node-sass": "4.14.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
