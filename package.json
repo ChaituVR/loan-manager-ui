@@ -57,7 +57,7 @@
     "@storybook/addon-actions": "5.3.19",
     "@storybook/addon-links": "5.3.19",
     "@storybook/addons": "5.3.19",
-    "@storybook/preset-create-react-app": "3.0.0",
+    "@storybook/preset-create-react-app": "3.0.1",
     "@storybook/preset-scss": "1.0.2",
     "@storybook/react": "5.3.19",
     "concurrently": "5.2.0",
