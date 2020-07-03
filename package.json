@@ -63,7 +63,7 @@
     "concurrently": "5.2.0",
     "css-loader": "3.6.0",
     "nodemon": "2.0.4",
-    "sass-loader": "9.0.0",
+    "sass-loader": "9.0.1",
     "style-loader": "1.2.1"
   },
   "proxy": "http://localhost:8080",
