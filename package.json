@@ -14,7 +14,7 @@
     "enzyme-adapter-react-16": "1.15.2",
     "firebase": "7.15.5",
     "firebaseui": "4.5.1",
-    "graphql": "15.2.0",
+    "graphql": "15.3.0",
     "mongodb": "3.5.9",
     "node-sass": "4.14.1",
     "react": "16.13.1",
